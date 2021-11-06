@@ -1,0 +1,139 @@
+/* pages/goods_detail/goods_detail.wxss */
+page{
+    background-color: #F8F8F8;
+}
+swiper, swiper-item {
+    height: 750rpx;
+    display: flex;
+}
+
+.base_info {
+    padding: 25rpx;
+    background-color: #fff;
+}
+
+.base_info .rmb{
+    color: #f44;
+    font-size: 30rpx;
+    font-weight: 700;
+}
+
+.base_info .current_price {
+    /* display: block; */
+    color: #f44;
+    font-size: 50rpx;
+    font-weight: 700;
+    /* padding-left: 20rpx; */
+}
+.base_info .jiage, .base_info .origin_price {
+    font-size: 25rpx;
+    color: #969799;
+    /* padding-left: 20rpx; */
+}
+.base_info .origin_price {
+    padding-left: 15rpx;
+    text-decoration: line-through;
+}
+
+.base_info .name_share {
+    position: relative;
+}
+
+.base_info .name_share button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 40rpx;
+    padding: 0;
+    z-index: 1;
+}
+
+.base_info .name_share .goods_name {
+    font-size: 32rpx;
+}
+.base_info .name_share image {
+    width: 40rpx;
+    position: absolute;
+    right: 0;
+}
+
+
+.sales {
+    height: 35rpx;
+    margin: 10rpx;
+    position: relative;
+    background-color: #fff;
+    font-size: 27rpx;
+}
+.sales .s1 {
+    position: absolute;
+    left: 0;
+}
+.sales .s1 .t1 {
+    color: #969799;
+}
+
+.sales .s2 {
+    position: absolute;
+    color: #969799;
+    right: 0;
+}
+
+
+.detail_pics image {
+    display: block;
+}
+
+.bottom_tools {
+    position: relative;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80rpx;
+    background-color: #fff;
+}
+
+.bottom_tools image {
+    width: 35rpx;
+}
+.bottom_tools .contact button {
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 40rpx;
+    z-index: 1;
+}
+
+
+.bottom_tools .tool_item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 22rpx;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+}
+
+.bottom_tools .add_shopcart,
+.bottom_tools .buy {
+    flex: 3;
+    font-size: 24rpx;
+    color: white;
+    margin: 10rpx 0;
+}
+.bottom_tools .add_shopcart {
+    background-color: #fd804a;
+    border-top-left-radius: 40rpx;
+    border-bottom-left-radius: 40rpx;
+}
+.bottom_tools .buy {
+    background-color: #FF4444;
+    border-top-right-radius: 40rpx;
+    border-bottom-right-radius: 40rpx;
+    margin-right: 10rpx;
+}

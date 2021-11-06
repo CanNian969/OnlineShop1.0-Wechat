@@ -1,0 +1,47 @@
+{
+    "goods_id": 1,
+    "goods_name": "水晶球音乐盒1",
+    "current_price": 158,
+    "origin_price": 160,
+    "sales": 20,
+    "stock": 380,
+    "goods_deleted": false,
+    "goods_img": "https://img01.yzcdn.cn/upload_files/2020/10/28/Fp9FZy10_zX5-_apYhW0dtK8FomA.jpg!middle.webp",
+    "shopcart_img": "https://img01.yzcdn.cn/upload_files/2020/12/17/Fnxe3tgxDiu7RRQgmzrH1vQfWrm7.jpg!large.webp",
+    "swiper_pics": [
+        {
+            "pic_id": 2000,
+            "pic_src": "https://img01.yzcdn.cn/upload_files/2020/12/17/Fnxe3tgxDiu7RRQgmzrH1vQfWrm7.jpg!large.webp"
+        },
+        {
+            "pic_id": 2001,
+            "pic_src": "https://img01.yzcdn.cn/upload_files/2020/12/17/Fnxe3tgxDiu7RRQgmzrH1vQfWrm7.jpg!large.webp"
+        },
+        {
+            "pic_id": 2002,
+            "pic_src": "https://img01.yzcdn.cn/upload_files/2020/12/17/Fnxe3tgxDiu7RRQgmzrH1vQfWrm7.jpg!large.webp"
+        },
+        {
+            "pic_id": 2003,
+            "pic_src": "https://img01.yzcdn.cn/upload_files/2020/12/17/Fnxe3tgxDiu7RRQgmzrH1vQfWrm7.jpg!large.webp"
+        }
+    ],
+    "detail_pics": [
+        {
+            "pic_id": 2000,
+            "pic_src": "https://img01.yzcdn.cn/upload_files/2020/12/17/Fnxe3tgxDiu7RRQgmzrH1vQfWrm7.jpg!large.webp"
+        },
+        {
+            "pic_id": 2001,
+            "pic_src": "https://img01.yzcdn.cn/upload_files/2020/12/17/Fnxe3tgxDiu7RRQgmzrH1vQfWrm7.jpg!large.webp"
+        },
+        {
+            "pic_id": 2002,
+            "pic_src": "https://img01.yzcdn.cn/upload_files/2020/12/17/Fnxe3tgxDiu7RRQgmzrH1vQfWrm7.jpg!large.webp"
+        },
+        {
+            "pic_id": 2003,
+            "pic_src": "https://img01.yzcdn.cn/upload_files/2020/12/17/Fnxe3tgxDiu7RRQgmzrH1vQfWrm7.jpg!large.webp"
+        }
+    ]
+}

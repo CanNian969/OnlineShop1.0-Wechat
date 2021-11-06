@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "SearchInput":"../../component/SearchInput/SearchInput",
+    "AboutUS":"../../component/AboutUs/AboutUs"
+  },
+  "navigationBarTitleText": "全部商品"
+}

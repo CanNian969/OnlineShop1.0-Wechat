@@ -1,0 +1,27 @@
+<!--pages/order/order.wxml-->
+<view class="order" hidden="{{openID == ''}}">
+	<view class="external_item" wx:for="{{myOrder}}" wx:key="_id">
+		<text selectable="true" class="order_id">订单编号: {{item._id}}</text>
+
+		<view
+		 class="inner_item"
+		 wx:for="{{item.order}}"
+		 wx:for-item="i_item"
+		 wx:key="goods_id"
+		>
+			<image style="width:170rpx" src="{{i_item.goods_img}}" mode="widthFix" />
+			<view class="goods_info">
+				<text class="g_name">{{i_item.goods_name}}</text>
+				<text class="g_price">￥{{i_item.current_price}}</text>
+				<text class="g_num">x{{i_item.num}}</text>
+			</view>
+		</view>
+
+		<text class="g_time" style="font-size:25rpx">时间：{{item.times}}</text>	  
+		<view class="t_price">
+			总价:
+			<text style="color:red">￥{{item.total_price}}</text>
+		</view>
+	</view>
+</view>
+

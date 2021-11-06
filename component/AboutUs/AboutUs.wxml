@@ -1,0 +1,18 @@
+<!--component/AboutUs/AboutUs.wxml-->
+<view class="first_view">
+    <!-- About Us -->
+    <view class="about_us">
+        <navigator url="" class="about_us_item">店铺主页</navigator>
+        <navigator url="" class="about_us_item">个人中心</navigator>
+        <navigator url="" class="about_us_item">关注我们</navigator>
+        <navigator url="" class="about_us_item">线下门店</navigator>
+        <navigator url="" class="about_us_item">店铺信息</navigator>
+    </view>
+
+    <!-- logo -->
+    <navigator class="logo" url="">
+        <image mode="widthFix"
+        src="https://img2.baidu.com/it/u=2375381613,1467844958&fm=26&fmt=auto&gp=0.jpg" />
+        <text>logo</text>
+    </navigator>
+</view>

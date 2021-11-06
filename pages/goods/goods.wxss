@@ -1,0 +1,61 @@
+/* pages/goods/goods.wxss */
+page {
+    height: 100%;
+    background-color: #F8F8F8;
+}
+.cates {
+    height: 100%;
+    display: flex;
+}
+
+.cates .left_cates {
+    flex: 2;
+    /* background-color: cornflowerblue; */
+}
+
+.cates .left_cates .left_item {
+    height: 50rpx;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 32rpx 16rpx 32rpx 24rpx;
+    font-size: 30rpx;
+}
+.cates .left_cates .active {
+    border-left: 6rpx solid red;
+}
+
+
+.cates .right_cates {
+    flex: 5;
+    background-color: #fff;
+}
+
+.cates .right_cates .right_item {
+    /* width: 750rpx; */
+    display: block;
+    /* background-color: rgb(160, 189, 200); */
+}
+.cates .right_cates .right_item navigator{
+    position: relative;
+    margin: 20rpx 0;
+}
+.cates .right_cates .right_item image{
+    /* width: 50%; */
+    display: inline-block;
+}
+
+.cates .right_cates .right_item .name{
+    position: absolute;
+    top: 10rpx;
+    display: inline-block;
+    width: 280rpx;
+    font-size: 30rpx;
+    padding-top: 10rpx;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+}
+.cates .right_cates .right_item .price {
+    color: #ff4444;
+    font-weight: 500;
+}

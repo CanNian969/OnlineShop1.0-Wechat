@@ -1,0 +1,6 @@
+/* pages/pickup/pickup.wxss */
+view {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

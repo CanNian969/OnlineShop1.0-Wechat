@@ -1,0 +1,107 @@
+{
+    "_id": "14139e12612ef296086ea62266ecbb61",
+    "ad_img": [
+        {
+            "goods_id": 0,
+            "img_src": "https://img01.yzcdn.cn/upload_files/2021/07/22/FsV7CEEJQY1YzEbV1zEkeWI1tp0L.jpg!large.webp"
+        },
+        {
+            "goods_id": 1,
+            "img_src": "https://img01.yzcdn.cn/upload_files/2021/07/22/FsV7CEEJQY1YzEbV1zEkeWI1tp0L.jpg!large.webp"
+        }
+    ],
+    "cap_img": [
+        {
+            "id": 0,
+            "img_src": "https://img01.yzcdn.cn/upload_files/2021/07/22/FsV7CEEJQY1YzEbV1zEkeWI1tp0L.jpg!large.webp"
+        },
+        {
+            "id": 1,
+            "img_src": "https://img01.yzcdn.cn/upload_files/2021/07/22/FsV7CEEJQY1YzEbV1zEkeWI1tp0L.jpg!large.webp"
+        },
+        {
+            "id": 2,
+            "img_src": "https://img01.yzcdn.cn/upload_files/2021/07/22/FsV7CEEJQY1YzEbV1zEkeWI1tp0L.jpg!large.webp"
+        },
+        {
+            "id": 3,
+            "img_src": "https://img01.yzcdn.cn/upload_files/2021/07/22/FsV7CEEJQY1YzEbV1zEkeWI1tp0L.jpg!large.webp"
+        },
+        {
+            "id": 4,
+            "img_src": "https://img01.yzcdn.cn/upload_files/2021/07/22/FsV7CEEJQY1YzEbV1zEkeWI1tp0L.jpg!large.webp"
+        },
+        {
+            "id": 5,
+            "img_src": "https://img01.yzcdn.cn/upload_files/2021/07/22/FsV7CEEJQY1YzEbV1zEkeWI1tp0L.jpg!large.webp"
+        },
+        {
+            "id": 6,
+            "img_src": "https://img01.yzcdn.cn/upload_files/2021/07/22/FsV7CEEJQY1YzEbV1zEkeWI1tp0L.jpg!large.webp"
+        },
+        {
+            "id": 7,
+            "img_src": "https://img01.yzcdn.cn/upload_files/2021/07/22/FsV7CEEJQY1YzEbV1zEkeWI1tp0L.jpg!large.webp"
+        }
+    ],
+    "swiper_img": [
+        {
+            "goods_id": 0,
+            "img_src": "https://img01.yzcdn.cn/upload_files/2020/02/19/FhL2ZRG8Ey3hH7XUCEgwpiXUNjGT.jpg!large.webp"
+        },
+        {
+            "goods_id": 1,
+            "img_src": "https://img01.yzcdn.cn/upload_files/2020/02/19/FhL2ZRG8Ey3hH7XUCEgwpiXUNjGT.jpg!large.webp"
+        },
+        {
+            "goods_id": 2,
+            "img_src": "https://img01.yzcdn.cn/upload_files/2020/02/19/FhL2ZRG8Ey3hH7XUCEgwpiXUNjGT.jpg!large.webp"
+        }
+    ],
+    "Plates": [
+        {
+            "p_id": 0,
+            "plate_name": "创意包袋0",
+            "img_src": "https://img01.yzcdn.cn/upload_files/2020/02/19/FtyHaMhmWx0xG16Ota8o9VO6N89a.jpg!large.webp",
+            "children": [
+                {"goods_id": 2000},
+                {"goods_id": 2001},
+                {"goods_id": 2002},
+                {"goods_id": 2003}
+            ]
+        },
+        {
+            "p_id": 1,
+            "plate_name": "创意包袋1",
+            "img_src": "https://img01.yzcdn.cn/upload_files/2020/02/19/FtyHaMhmWx0xG16Ota8o9VO6N89a.jpg!large.webp",
+            "children": [
+                {"goods_id": 2000},
+                {"goods_id": 2001},
+                {"goods_id": 2002},
+                {"goods_id": 2003}
+            ]
+        },
+        {
+            "p_id": 2,
+            "plate_name": "创意包袋2",
+            "img_src": "https://img01.yzcdn.cn/upload_files/2020/02/19/FtyHaMhmWx0xG16Ota8o9VO6N89a.jpg!large.webp",
+            "children": [
+                {"goods_id": 2000},
+                {"goods_id": 2001},
+                {"goods_id": 2002},
+                {"goods_id": 2003}
+            ]
+        },
+        {
+            "p_id": 3,
+            "plate_name": "创意包袋3",
+            "img_src": "https://img01.yzcdn.cn/upload_files/2020/02/19/FtyHaMhmWx0xG16Ota8o9VO6N89a.jpg!large.webp",
+            "children": [
+                {"goods_id": 2000},
+                {"goods_id": 2001},
+                {"goods_id": 2002},
+                {"goods_id": 2003}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+<!--pages/Main/Main.wxml-->
+
+<view class="page-content">
+	<!-- 搜索栏 -->
+	<SearchInput/>
+
+	<!-- 首页出现的精选产品图片 -->
+	<view hidden>
+		<block wx:for="{{ad_img}}" wx:key="goods_id">
+		<navigator url="../goods_detail/goods_detail?goods_id={{item.goods_id}}">
+			<image class="ad_img" src="{{item.img_src}}" mode="scaleToFill" />
+		</navigator>
+		</block>
+	</view>
+	  
+
+	<!-- 下面的便捷分类导航(8) -->
+	
+	<view hidden>
+		<view class="cap_img">
+		<image mode="widthFix" src="https://img01.yzcdn.cn/upload_files/2021/08/03/FkUZB5N7tEBV1c-h-pbrGHlF-TOp.jpg!large.webp" />
+		<block wx:for="{{cap_img}}" wx:key="id">
+			<navigator url="../goods/goods" open-type="switchTab">
+				<view bindtap="cap_item_index" data-index="{{index}}" class="cap_img_item" />
+			</navigator>
+		</block>
+	</view>
+	</view>
+	  
+	
+	<!-- 轮播图 -->
+	<swiper
+	 indicator-dots="{{true}}"
+	 autoplay="{{true}}"
+	 interval="2500"
+	 circular="{{true}}"
+	 indicator-active-color="#FF4444"
+	 indicator-color="rgba(219,173,175, .5)"
+	>
+		<swiper-item wx:for="{{swiper_img}}" wx:key="goods_id">
+			<navigator url="../goods_detail/goods_detail?goods_id={{item.goods_id}}">
+				<image src="{{item.img_src}}" mode="widthFix" />
+			</navigator>
+		</swiper-item>
+	</swiper>
+
+	<!-- 各种板块以及商品推荐 -->
+	<view hidden>
+		<block wx:for="{{Plates}}" wx:key="p_id">
+		<!-- 板块 -->
+		<view class="up_plate">
+			<navigator url="../goods/goods" open-type="switchTab">
+				<image bindtap="cap_item_index" data-index="{{index}}" src="{{item.img_src}}" mode="widthFix" />
+			</navigator>
+		</view>
+
+		<!-- 板块内的商品推荐 -->
+		<block wx:for="{{item.children}}" wx:for-item="jitem" wx:key="goods_id">
+			<navigator class="down_plate" url="../goods_detail/goods_detail?goods_id={{item.goods_id}}">
+				<image src="{{jitem.goods_img}}" mode="widthFix" />
+				<text >{{jitem.goods_name}}</text>
+				<view>
+					<text >￥{{jitem.goods_price}}</text>
+					<!-- <image src="" /> 购物车图标 -->
+				</view>
+			</navigator>
+		</block>
+	</block>
+	</view>
+	  
+
+	<!-- <AboutUS/> -->
+</view>
+

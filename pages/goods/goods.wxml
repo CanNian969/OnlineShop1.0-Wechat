@@ -1,0 +1,32 @@
+<!--pages/goods/goods.wxml-->
+
+<SearchInput></SearchInput>
+<view class="cates">
+    <!-- 左侧商品菜单 -->
+    <scroll-view scroll-y="{{true}}" class="left_cates">
+        <view 
+        wx:for="{{left_plate}}"
+        wx:key="*this"
+        class="left_item {{index === current_index ? 'active' : ''}}"
+        bindtap="left_tap_active" data-index="{{index}}">
+            {{item}}
+        </view>
+    </scroll-view>
+
+    <!-- 右侧商品内容 -->
+    <scroll-view scroll-top="{{scroll_top}}" scroll-y="{{true}}" class="right_cates">
+        <view 
+        wx:for="{{right_plate}}"
+        wx:key="goods_id"
+        class="right_item">
+        <navigator url="../goods_detail/goods_detail?goods_id={{item.goods_id}}">
+            <image src="{{item.goods_img}}" mode="widthFix"
+            style="width:216rpx" />
+            <text class="name">{{item.goods_name}}</text>
+            <text class="price">￥{{item.goods_price}}</text>
+        </navigator>
+        </view>
+    </scroll-view>
+
+
+</view>

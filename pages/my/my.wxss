@@ -1,0 +1,69 @@
+/* pages/my/my.wxss */
+page {
+    background-color: #F8F8F8;
+}
+
+.login {
+    margin: 0 auto;
+    width: 650rpx;
+    height: 400rpx;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.login .nickName {
+    margin-top: 40rpx;
+    /* color: white; */
+}
+
+.login .btn {
+    opacity: 0;
+    z-index: 1;
+    width: 150rpx;
+    height: 150rpx;
+    position: absolute;
+}
+
+.login .circle {
+    height: 150rpx;
+    width: 150rpx;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.login .circle image {
+    width: 150rpx;
+    /* z-index: -1; */
+    border-radius: 50%;
+
+}
+
+.order {
+    position: relative;
+    margin: 20rpx auto;
+    width: 610rpx;
+    background-color: #fff;
+    height: 60rpx;
+    display: flex;
+    padding: 12rpx 20rpx;
+    align-items: center;
+    font-size: 28rpx;
+    /* font-weight: 600; */
+}
+
+.order image {
+    width: 40rpx;
+    margin-right: 10rpx;
+}
+
+.order .btn {
+    opacity: 0;
+    width: 100%;
+    height: 60rpx;
+    z-index: 1;
+    /* float: left; */
+    position: absolute;
+}

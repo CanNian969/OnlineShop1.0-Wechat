@@ -1,0 +1,31 @@
+/* component/AboutUs/AboutUs.wxss */
+.first_view {
+    background-color: #F8F8F8;
+}
+
+.about_us {
+    height: 50rpx;
+    text-align: center;
+}
+
+.about_us .about_us_item {
+    position: relative;
+    left: 50rpx;
+    float: left;
+    padding: 0 16rpx;
+    font-size: 25rpx;
+    font-weight: 350;
+}
+
+.logo {
+    background-color: #F8F8F8;
+    /* position: relative; */
+    text-align: center;
+}
+.logo image {
+    /* display: block; */
+    width: 250rpx;
+}
+.logo text {
+    display: block;
+}

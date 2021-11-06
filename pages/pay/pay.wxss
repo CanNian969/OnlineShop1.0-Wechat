@@ -1,0 +1,154 @@
+/* pages/pay/pay.wxss */
+page {
+    background-color: #F8F8F8;
+}
+
+.shopcart {
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: #F8F8F8;
+}
+
+.shopcart .address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 102rpx;
+    width: 750rpx;
+    padding: 10rpx 20rpx;
+    background-color: #fff;
+}
+.shopcart .address .name {
+    font-size: 26rpx;
+}
+.shopcart .address .city {
+    font-size: 30rpx;
+}
+
+.listframe {
+    background-color: #fff;
+    /* display: flex; */
+    margin: 20rpx 20rpx;
+}
+
+.shoplist {
+    height: 250rpx;
+    background-color: #fff;
+    display: flex;
+    /* margin-top: 10rpx; */
+}
+
+.shoplist image {
+    /* flex: 3; */
+    padding: 20rpx;
+    width: 200rpx;
+}
+
+.shoplist .info {
+    flex: 5;
+    display: flex;
+    position: relative;
+}
+
+.shoplist .info .title {
+    font-size: 32rpx;
+    position: absolute;
+    top: 20rpx;
+}
+
+.shoplist .info .price {
+    position: absolute;
+    left: 0;
+    bottom: 20rpx;
+}
+
+.shoplist .info .num_tool {
+    position: absolute;
+    right: 0;
+    bottom: 20rpx;
+    display: flex;
+}
+
+
+.shoplist .info .num_tool .num {
+    font-size: 26rpx;
+    margin-right: 10rpx;
+}
+
+
+.shopcart .delivery {
+
+}
+
+.shopcart .delivery .cboxGroup {
+    display: flex;
+    flex-direction: raw;
+    width: 750rpx;
+    background-color: #fff;
+}
+.shopcart .delivery .cboxGroup .checkbox {
+    margin-left: 40rpx;
+}
+.shopcart .delivery .cboxGroup checkbox {
+    display: inline-block;
+}
+
+.shopcart .delivery .cboxGroup .checkbox {
+    /* display: inline; */
+}
+
+.shopcart .sel_all {
+    position: fixed;
+    bottom: 0;
+    width: 750rpx;
+    height: 90rpx;
+    background-color: #fff;
+}
+
+.shopcart .sl_a {
+    /* width: 100rpx; */
+    margin: 30rpx 0;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopcart .sel_all .money {
+    float: right;
+    /* margin: 30rpx 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopcart .sel_all .money .t2 {
+    margin: 30rpx 0;
+    font-size: 24rpx;
+}
+
+.shopcart .sel_all .money .t3 {
+    color: #f44;
+    font-weight: 600;
+    /* height: 100rpx; */
+
+}
+
+.shopcart .sel_all .money .btn {
+    width: 192rpx;
+    height: 72rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50rpx;
+    color: #fff;
+    font-size: 28rpx;
+    margin: 0 20rpx;
+    background-color: #c8c9cc;
+}
+
+.shopcart .sel_all .money .btn2 {
+    background-color: #FF4444;
+}

@@ -1,0 +1,10 @@
+<!--pages/pickup/pickup.wxml-->
+<view>
+    <text class="t1" decode="false">
+        自提：公共教学楼518, 现场扫码付款
+        自提时间: 下午7:00-9:00
+        邮寄：请联系客服付款
+    </text>
+
+</view>
+  

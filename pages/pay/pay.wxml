@@ -1,0 +1,59 @@
+<!--pages/pay/pay.wxml-->
+
+<view class="shopcart">
+    <!-- address -->
+    <view class="address" hidden="{{shopcart.num}}">
+        <view wx:if="{{!address.userName}}" bindtap="get_address" class="getadd">
+            获取收获地址
+        </view>
+
+        <view wx:else bindtap="get_address">
+            <view class="name">
+                {{address.userName}}
+                {{address.telNumber}}
+            </view>
+            <view class="city">
+                {{address.provinceName}}{{address.cityName}}{{address.countyName}}{{address.detailInfo}}
+            </view>
+        </view>
+          
+    </view>
+
+    <!-- shoplist -->
+    <view class="listframe">
+        <block wx:for="{{shopcart}}" wx:key="goods_id">
+            <view class="shoplist" hidden="{{!item.checked}}">
+                <image src="{{item.shopcart_img}}" mode="widthFix"/>
+                <view class="info">
+                    <text class="title">{{item.goods_name}}</text>
+                    <text class="price">￥{{item.current_price}}</text>
+                    <view class="num_tool">
+                        <text class="num">x{{item.num}}</text>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+
+    <!-- 送货方式 -->
+    <view class="delivery">
+        <checkbox-group class="cboxGroup" bindchange="checkboxChange">
+            <label class="checkbox" wx:for="{{items}}" wx:key="{{items.value}}">
+                <checkbox value="{{item.value}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+        </checkbox-group>
+
+    </view>
+      
+
+    <!-- 全选 -->
+    <view class="sel_all">          
+        <view class="money">
+            <text class="t2">合计:</text>
+            <text class="t3">￥{{total_price}}</text>
+            <text bindtap="handlePay" class="btn {{total_price ? 'btn2':''}}">提交订单</text>
+        </view>
+    </view>
+
+</view>
+

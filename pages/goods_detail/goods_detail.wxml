@@ -1,0 +1,67 @@
+<!-- pages/goods_detail/goods_detail.wxml -->
+<view>
+	<swiper autoplay="{{true}}" circular="{{true}}" indicator-dots="{{true}}">
+		<swiper-item wx:for="{{goods_detail.swiper_pics}}" wx:key="pic_id">
+			<image src="{{item.pic_src}}" mode="widthFix" />
+		</swiper-item>
+	</swiper>
+	<view class="base_info">
+		<view>
+			<text class="rmb">￥</text>
+			<text class="current_price">{{goods_detail.current_price}}</text>
+		</view>
+		<view>
+			<text class="jiage">价格</text>
+			<text class="origin_price">￥{{goods_detail.origin_price}}</text>
+		</view>
+		<view class="name_share">
+			<text class="goods_name">{{goods_detail.goods_name}}</text>
+			<image src="cloud://onlineshop-7azxl.6f6e-onlineshop-7azxl-1303856867/icon/分享.png" mode="widthFix" />
+			<button open-type="share" bindcontact="handleContact" />
+		</view>
+	</view>
+
+	<view class="sales">
+		<view class="s1">
+			<text class="t1">运费</text>
+			<text class="t2">￥0.00</text>
+		</view>
+		<view class="s2">
+			<text class="t1" decode="{{true}}">已售&ensp;{{goods_detail.sales}}&ensp;</text>
+			<text class="t2" decode="{{true}}">库存&ensp;{{goods_detail.stock}}</text>
+		</view>
+	</view>
+
+	<view class="detail_pics">
+		<block wx:for="{{goods_detail.detail_pics}}" wx:key="pic_id">
+			<image src="{{item.pic_src}}" mode="widthFix" />
+		</block>
+	</view>
+</view>
+
+<view class="bottom_tools">
+	<view class="tool_item contact">
+		<image src="cloud://onlineshop-7azxl.6f6e-onlineshop-7azxl-1303856867/icon/客服.png" mode="widthFix" />
+		<text >客服</text>
+		<button open-type="contact" bindcontact="handleContact" />
+	</view>
+
+	<view class="tool_item homepage" bindtap="switchTab">
+		<image src="cloud://onlineshop-7azxl.6f6e-onlineshop-7azxl-1303856867/icon/首页.png" mode="widthFix" />
+		<text >主页</text>
+	</view>
+
+	<view class="tool_item shopcart" bindtap="switchCart">
+		<image src="cloud://onlineshop-7azxl.6f6e-onlineshop-7azxl-1303856867/icon/购物车.png" mode="widthFix" />
+		<text >购物车</text>
+	</view>
+
+	<view class="tool_item add_shopcart" bindtap="handleAddCart">
+		<text >加入购物车</text>
+	</view>
+
+	<navigator class="tool_item buy" url="../pay/pay?goods_id={{goods_detail.goods_id}}">
+		<text >立即购买</text>
+	</navigator>
+</view>
+
